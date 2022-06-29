@@ -7,13 +7,15 @@ import { TablaComponent } from './pages/tabla/tabla.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormComponent } from './pages/form/form.component';
 import { FormsModule  } from "@angular/forms";
+import { PaginaComponent } from './pages/pagina/pagina.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TablaComponent,
-    FormComponent
+    FormComponent,
+    PaginaComponent
   ],
   imports: [
     FormsModule,
