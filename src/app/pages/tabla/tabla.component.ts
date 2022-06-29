@@ -65,8 +65,9 @@ export class TablaComponent implements OnInit {
     this.form = true;
   }
 
-  public eventoCancelar() : void{
-    console.log("Se presiono el cancelar");
+  public eventoCancelar(evento : any) : void{
+    console.log(evento);
+    console.log("Se presiono el cancelar" );
   }  
 
 

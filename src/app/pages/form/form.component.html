@@ -2,7 +2,7 @@
 
 
 <form >
-    <p>Index: <input        [(ngModel)]="item.index" type="text" name="index"></p>
+    <p>Index: <input        [(ngModel)]="item.index" (input)="seCambioIndex($event)" type="text" name="index"></p>
     <p>Nombre: <input       [(ngModel)]="item.API" type="API" name="index" ></p>
     <p>Descripción: <input  [(ngModel)]="item.Description" type="text" name="Description" ></p>
     <p>Categoria: <input    [(ngModel)]="item.Category" type="text" name="Category" ></p>

@@ -1,4 +1,4 @@
-<app-form *ngIf="form" [item]="itemSelect" (cancelEvent)="eventoCancelar()"></app-form>
+<app-form *ngIf="form" [item]="itemSelect" (cancelEvent)="eventoCancelar($event)"></app-form>
 <div *ngIf="errorExists">
     Ocurrio un error al tratar de consumir el servicio
 </div>
