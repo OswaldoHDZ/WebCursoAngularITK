@@ -1,0 +1,29 @@
+.demo {
+    border: 1px solid #C0C0C0;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.demo th {
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+    background: #F0F0F0;
+}
+
+.demo td {
+    border: 1px solid #C0C0C0;
+    padding: 5px;
+}
+
+.button {
+    background-color: #4c75af;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

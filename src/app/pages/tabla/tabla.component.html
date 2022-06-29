@@ -1,0 +1,30 @@
+<app-form *ngIf="form" [item]="itemSelect" (cancelEvent)="eventoCancelar()"></app-form>
+<div *ngIf="errorExists">
+    Ocurrio un error al tratar de consumir el servicio
+</div>
+<div *ngIf="entries.length == 0 && !errorExists">
+    <span>Cargando...</span>
+</div>
+<table *ngIf="entries.length > 0" class="demo">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Nombre API</th>
+            <th>Descripción</th>
+            <th>Categoria</th>
+            <th>Sitio</th>
+            <th colspan="2">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let entry of entries">
+            <td>{{ entry.index }}</td>
+            <td>{{ entry.API }}</td>
+            <td>{{ entry.Description}}</td>
+            <td>{{ entry.Category }}</td>
+            <td><a target="_blank" href="{{ entry.Link }}">Ir al sitio</a></td>
+            <td><button (click)="editar(entry)">Editar</button></td>
+            <td><button (click)="eliminar(entry)">Eliminar</button></td>
+        </tr>
+    </tbody>
+</table>
