@@ -1,0 +1,3 @@
+{
+    "URL_SERVICE" : "https://api.publicapis.org"
+}
