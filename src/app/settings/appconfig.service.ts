@@ -11,12 +11,10 @@ export class AppconfigService {
 
   constructor( private http: HttpClient ) { }
 
-  public getAppconfig() : Observable<Appconfig> {
-    return this.http.get('assets/json/WebCursoAngularITK.txt').pipe(
-      catchError((error) =>{
-        return [];
-      }),map(iterador => iterador as Appconfig)
-    );
+  public getAppconfig() : Promise<Appconfig | undefined> {
+    return this.http.get('assets/json/WebCursoAngularITK.txt'). toPromise();
+  
   }
+
 
 }
