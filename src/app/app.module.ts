@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 import { TablaComponent } from './pages/tabla/tabla.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormComponent } from './pages/form/form.component';
-import { FormsModule  } from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 import { PaginaComponent } from './pages/pagina/pagina.component';
-
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { PaginaComponent } from './pages/pagina/pagina.component';
     FormsModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
