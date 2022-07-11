@@ -9,11 +9,11 @@ import { catchError, map } from 'rxjs/operators';
 })
 export class AppconfigService {
 
-  constructor( private http: HttpClient ) { }
+  constructor(private http: HttpClient) { }
 
-  public getAppconfig() : Promise<Appconfig | undefined> {
-    return this.http.get('assets/json/WebCursoAngularITK.txt'). toPromise();
-  
+  public getAppconfig(): Observable<Appconfig> {
+    return this.http.get<Appconfig>('assets/json/WebCursoAngularITK.txt');
+
   }
 
 
