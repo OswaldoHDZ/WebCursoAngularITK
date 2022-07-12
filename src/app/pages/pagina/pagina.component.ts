@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ComunicacionService } from 'src/app/services/comunicacion.service';
 import { AppconfigService } from 'src/app/settings/appconfig.service';
 import { interval, firstValueFrom } from 'rxjs';
+import { AuthService } from 'src/app/services/auth.service';
 
 
 
@@ -13,7 +14,8 @@ import { interval, firstValueFrom } from 'rxjs';
 export class PaginaComponent implements OnInit {
 
   constructor(private comunicacionService: ComunicacionService,
-    private appconfigService: AppconfigService) { }
+    private appconfigService: AppconfigService,
+    private auth: AuthService) { }
 
   public variableCambio !: string;
 

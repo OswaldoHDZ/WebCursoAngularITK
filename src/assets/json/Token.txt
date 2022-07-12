@@ -1,0 +1,8 @@
+{
+    "aplicacion": "WEBCURSOANGULAR",
+    "tipoApp": "WEB",
+    "perfil": "APLICACION_WS",
+    "usuario": "NOMBRE_USUARIO",
+    "password": "estaeslacontrasenna",
+    "token": "eyJhbGciOiJIU"
+}
