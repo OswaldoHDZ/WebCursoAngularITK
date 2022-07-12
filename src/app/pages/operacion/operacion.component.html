@@ -1,0 +1,24 @@
+<h1>Operaciones basica con 2</h1>
+<div class="example-container">
+    <mat-form-field appearance="fill">
+        <mat-label>Ingresa un numero</mat-label>
+        <input matInput placeholder="numero 1" [formControl]="validaNumero" required pattern="[0-9]*\.?[0-9]*">
+        <mat-error *ngIf="validaNumero.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>&nbsp;
+
+    <mat-form-field appearance="fill">
+        <mat-label>Selecciona Operacion</mat-label>
+        <mat-select [formControl]="validaOperacion" required>
+            <mat-option value="Suma">Suma</mat-option>
+            <mat-option value="Resta">Resta</mat-option>
+            <mat-option value="Multiplicacion">Multiplicacion</mat-option>
+            <mat-option value="Division">Division</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <div>
+        <button clmat-raised-button (click)="ejecutaOperacion()" [disabled]="validaNumero.invalid || validaOperacion.invalid ">Ejecuta Operaciones</button> 
+    </div>
+</div>
+<div *ngIf="numero">
+    <h2>La {{operacion}} de {{numero}} y 2 es: {{numero | calculadora: operacion}} </h2>
+</div>

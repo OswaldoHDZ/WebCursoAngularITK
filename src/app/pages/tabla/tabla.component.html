@@ -19,8 +19,8 @@
     <tbody>
         <tr *ngFor="let entry of entries">
             <td>{{ entry.index }}</td>
-            <td>{{ entry.API }}</td>
-            <td>{{ entry.Description}}</td>
+            <td>{{ entry.API | mayusculas}}</td>
+            <td>{{ entry.Description | ordenar}}</td>
             <td>{{ entry.Category }}</td>
             <td><a target="_blank" href="{{ entry.Link }}">Ir al sitio</a></td>
             <td><button (click)="editar(entry)">Editar</button></td>
