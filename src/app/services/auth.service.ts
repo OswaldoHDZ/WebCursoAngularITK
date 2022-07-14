@@ -14,7 +14,7 @@ export class AuthService {
 
     constructor(private http: HttpClient) { }
 
-    public get token() {
+    public get token() : Token {
         return { ...this._token! };
     }
 

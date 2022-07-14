@@ -2,7 +2,7 @@
     "aplicacion": "WEBCURSOANGULAR",
     "tipoApp": "WEB",
     "perfil": "APLICACION_WS",
-    "usuario": "NOMBRE_USUARIO",
+    "usuario": "OSWALDO",
     "password": "estaeslacontrasenna",
     "token": "eyJhbGciOiJIU"
 }

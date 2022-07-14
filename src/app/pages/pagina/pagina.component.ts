@@ -3,6 +3,7 @@ import { ComunicacionService } from 'src/app/services/comunicacion.service';
 import { AppconfigService } from 'src/app/settings/appconfig.service';
 import { interval, firstValueFrom } from 'rxjs';
 import { AuthService } from 'src/app/services/auth.service';
+import { Token } from 'src/app/interfaces/token.interface';
 
 
 
@@ -19,6 +20,9 @@ export class PaginaComponent implements OnInit {
 
   public variableCambio !: string;
 
+  public getNombre() : Token{
+    return this.auth.token;
+  }
   async ngOnInit(): Promise<void> {
 
 
