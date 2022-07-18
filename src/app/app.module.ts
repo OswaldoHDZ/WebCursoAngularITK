@@ -7,7 +7,7 @@ import { TablaComponent } from './pages/tabla/tabla.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormComponent } from './pages/form/form.component';
 import { FormsModule } from "@angular/forms";
-import { PaginaComponent } from './pages/pagina/pagina.component';
+import { PaginaComponent } from './inicio/pagina/pagina.component';
 import { MatTableModule } from '@angular/material/table';
 import { CalculadoraPipe } from './pipes/calculadora.pipe';
 import { OperacionComponent } from './pages/operacion/operacion.component';

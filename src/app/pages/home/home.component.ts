@@ -21,9 +21,9 @@ export class HomeComponent implements OnInit {
   }
 
   entrar() {
-    this.auth.getToken().subscribe(response => { console.log("Entrar");});
-    this.route.navigate(['./inicio']);
     
+    this.route.navigate(['./inicio/hola']);
+    this.auth.getToken().subscribe(response => { console.log("Entrar");});
   }
 
 }
